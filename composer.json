@@ -1,14 +1,32 @@
 {
     "description": "Youtube API v3",
     "name": "empatisoft/youtube",
-    "type": "project",
+    "type": "library",
+    "keywords": [
+        "youtube",
+        "api",
+        "video",
+        "entegrasyon"
+    ],
     "homepage": "https://empatisoft.com",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Onur KAYA",
+            "email": "empatisoft@gmail.com",
+            "homepage": "https://empatisoft.com",
+            "role": "PHP Developer"
+        }
+    ],
     "require": {
-        "php": ">=7.3.8",
+        "php": ">=7.4",
         "ext-json": "*",
-        "guzzlehttp/guzzle": "^6.5",
-        "zendframework/zend-httphandlerrunner": "^1.1",
-        "psr/log": "^1.1"
-    }
+        "guzzlehttp/guzzle": "7.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Empatisoft\\Api\\Youtube\\": ""
+        }
+    },
+    "minimum-stability": "dev"
 }
