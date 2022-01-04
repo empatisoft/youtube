@@ -17,8 +17,8 @@ class Youtube {
 
     public function __construct(string $api_key)
     {
-        $this->request = new request();
-        $this->response = new response();
+        $this->request = new Request();
+        $this->response = new Response();
         $this->api_key = $api_key;
     }
 
